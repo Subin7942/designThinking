@@ -36,18 +36,39 @@ img {
 
 .groundImg {
   position: absolute;
-  width: 6%;
-  height: auto;
   object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
 }
-.groundImg3 {
+.groundHbox {
   position: absolute;
-  width: 14.5%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+}
+.groundImg:hover {
+  transform: translateY(-10px) scale(1.05);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.n1 {
+  width: 5%;
   height: auto;
-  /* object-fit: cover; */
+  top: 20.5%;
+  left: 30%;
+}
+.n3 {
+  width: 15%;
+  height: auto;
   top: 20.5%;
   left: 46.5%;
-  /* transform: rotate(90deg); */
+}
+.n12 {
+  width: 5%;
+  height: auto;
+  /* object-fit: cover; */
+  top: 12.5%;
+  left: 46.5%;
 }
 
 /* .Img {
